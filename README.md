@@ -1,2 +1,2 @@
 # B2B-Forum
-"# B2B-Forum" 
+The Satara B2B Forum is a premier networking and business development event designed to foster growth and collaboration among local businesses. This dynamic offers a platform for business leaders, entrepreneurs and professional from diverse industries to connect, exchange ideas and explore the opportunity for partnership and expansion. A Forum provide a platform for business owner, entrepreneurs to showcase their business to the other business professionals.
