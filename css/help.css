@@ -1,0 +1,87 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body{
+  background-color:  #C8DBD7;
+  padding: 10px;
+}
+
+.title h1{
+	text-align: center;
+	padding: 50px;
+	font-size: 42px;
+	margin-top: 60px;
+	
+}
+
+.title h1::after{
+	content:"";
+	height: 4px;
+	width:310px;
+	background-color: #000;
+	display: block;
+	margin: auto;
+	
+}
+
+.services{
+	width:85%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 60px auto;
+	text-align: center;
+	margin-top: 10px;
+	margin-left: 130px;
+	flex-wrap: wrap;
+}
+
+.card{
+	width:90%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+	margin: 0px 20px;
+	padding: 30px 40px;
+	background-color: #efefef;
+	border-radius: 25px;
+	cursor: pointer;
+}
+.card:hover{
+	background-color: pink;
+	transition: 0.4s ease;
+	
+}
+.card .icon{
+	font-size: 35px;
+	margin-bottom: 15px;
+	
+}
+
+.card h2{
+	font-size: 28px;
+	color: #c94f4f;
+	margin-bottom: 20px;
+}
+.card p{
+ font-size: 17px;
+margin-bottom: 30px;
+line-height: 1.5;
+color: #5e5e5e; 
+}
+@media screen and(max-width: 300px){
+	.services{
+		display: flex;
+		
+		flex-direction: column;
+		
+	}
+	.card{
+		width:30%;
+		margin-left:-20px;
+		}
+}

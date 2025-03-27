@@ -1,0 +1,93 @@
+body{
+	background-color: #C8DBD7;
+	padding: 10px;
+}
+.heading{
+   text-align: center;
+   margin-top: 13%;
+   
+}
+.heading h1{
+  font-size: 70px;
+  color: #36455c;
+  margin-bottom: 10px;
+  margin: 10px;
+  color:  black;
+}
+
+.about-us{
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  padding: 15px;
+}
+.about-us img{
+  flex: 0 50%;
+  max-width: 500px;
+  height: auto;
+  margin-left: -60px;
+}
+.about-us img:hover{
+	transform: scale(1.1);
+}
+.content{
+  padding: 35px;
+ width: 1000px;
+   margin-left: 10px;
+}
+.content h2{
+  color: #36455c;
+  font-size: 34px;
+  margin: 20px;
+  margin: 10px;
+  color: green;
+  margin-bottom: 20px;
+}
+.content p{
+  color: #666;
+  font-size: 19px;
+  line-height: 1.5;
+  margin: 10 px;
+  color: black;
+
+}
+
+.social-links{
+	margin-bottom: 10px;	
+}
+
+.social-links a{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	border-radius: 50px;
+	margin-right: 10px;
+	color: #fff;
+	background-color: #333;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+	transition: all 0.4s ease;
+	
+}
+.social-links a:hover{
+	transform: translateY(-3px);
+}
+
+@media(max-width: 768px){
+  .about-us{
+     flex-direction: column;
+  }
+  .about-us img{
+    flex: 0 100%;
+	max-width: 100%;
+  }
+  .content{
+    flex: 0 100%;
+	max-width: 100%;
+	padding: 15px;
+  }
+}
+
+

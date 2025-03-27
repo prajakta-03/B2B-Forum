@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title> PopUp (Thank-you)</title>
+<link rel="stylesheet" href="css/thankyou.css">
+<link rel="stylesheet" href="css/home.css">
+<link rel="stylesheet" href="css/footer.css">
+
+</head>
+ <!--header section starts -->
+
+
+<header>
+
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEijjG3YcrmL2gFR_8zJhZyQAak0nLzH5OYw_OzY5yhF5VpPwwrcVD8XSR7OJKe6PqXFJSBoKM8_0alJRosgvp3b4YdbuHnL-ddcfDRuUK4M0nDV4b2jrT8zEUjgEvc7xWwrB5vXr_gy877cJCnJj2DnfmcCe5hzQS-l2fiaf68wBU7JRbOANnEoTU9o9nE/s320/forumb2b.gif" class="logo">
+  
+ <div id="menu-bar" class="fas fa-bars"></div>
+  
+  <nav class="navbar">
+    <a style="--i:0;" href="index.html" class="active">Home</a>
+	
+	<li class="dropdown">
+<a href="aboutus.html" class="dropbtn">About</a>
+<div class="dropdown-content">
+<a href="mvv.html">Mission-Vision</a> 
+<a href="whytochooseus.html">Why to Choose?</a> 
+<a href="ourteam.html">Team</a> 
+</div>
+</li>
+	
+	<li class="dropdown">
+<a href="b2bpage.html" class="dropbtn">B2B Forum</a>
+<div class="dropdown-content">
+<a href="iaas.html">IaaS</a> 
+<a href="manufactures.html">Manufactures</a> 
+<a href="marketing.html">Marketing </a> 
+<a href="consultancy.html">Consultancies</a> 
+<a href="itsector.html">IT Sector</a> 
+<a href="teletransport.html">Tele & Transport</a> 
+<a href="construction.html">Construction</a> 
+<a href="educate.html">Eduction </a> 
+<a href="realestate.html">Real Estate</a> 
+<a href="wholsale.html">Wholesale </a> 
+<a href="logistics.html">Logistics</a> 
+<a href="hrs.html">HRS</a> 
+ 
+ 
+</div>
+</li>
+	
+	
+<li class="dropdown">	
+<a href="javascript:void(0)" class="dropbtn">Resources</a>
+<div class="dropdown-content">
+<a href="blog.html">Blog</a> 
+
+
+</div>
+</li>
+	<li class="dropdown">
+<a href="contact.html" class="dropbtn">Contact Us</a>
+
+</li>
+     
+	 <li class="dropdown">
+<a href="help.html" class="dropbtn">Help/Support</a>
+<div class="dropdown-content">
+<a href="faq.html">FAQ</a> 
+<a href="feedback1html">Feedback</a>
+<a href="newupdate.html">New Updates</a>
+
+
+</div>
+</li>
+	<a style="--i:7;" href="joinforum.html">Join</a>
+	<a style="--i:8;" href="loginform.html">Log In</a>
+	</nav>
+	
+	</header>
+	<!--header section end -->
+
+<body>
+
+<div class="con">
+  <button type="submit" class="btn1" onclick="openPopup()"> Submit</button>
+  <div class="popup" id="popup">
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEidVz3-z_WegknH3TdDVATYkQceaJZbaokv_pKBQnbfe6DHyahHo-UecHg72WdyyYYTsVAN1IBKukzPLe_vBM5WyCTwFHP4Id0l1fdGzfMKvpYjIXWJKdNzkIrRYyR31U2KFINT7VM9Eou5nDLActdpFgra_0maH_s_kO8n_mvQay1l8_7rxXTlyaGRdeA/s320/tick4.png" alt="" >
+  <h2>Thank You!</h2>
+  <p>Your details has been succesfully submitted.Thanks!!</p>
+  <button type="button1" onclick="closePopup()">OK</button>
+  
+   </div>
+ </div>
+
+<script src="js/home.js"></script>
+<script>
+let popup = document.getElementById("popup");
+
+function openPopup() {
+ popup.classList.add("open-popup");
+ }
+ 
+ function closePopup() {
+ popup.classList.remove("open-popup");
+ }
+
+
+</script>
+<!--footer section start-->
+<div class="footer1">
+  <div class="footer-container">
+  
+    <div class="box3">
+	<h3>About Us</h3>
+	<a href="whytochooseus.html">why to choose us?</a>
+	<a href="mvv.html">mission & vision</a>
+	<a href="ourteam.html">team</a>
+    </div>
+	
+	 <div class="box3">
+	<h3>B2B Forum</h3>
+	<a href="iaas.html">iaas</a>
+	<a href="manufactures.html">manufactures</a>
+	<a href="construction.html">construction</a>
+	<a href="educate.html">education</a>
+	<a href="consultancy.html">consultancy</a>
+	</div>
+	
+	<div class="box3">
+	<h3>Resources</h3>
+	<a href="#">blog</a>
+	<a href="#">articles</a>
+	</div>
+	
+	<div class="box3">
+	<h3>Follow Us</h3>
+	<a href="#"><i class="fab fa-whatsapp"></i></a>
+	 <a href="#"><i class="fab fa-twitter"></i></a>
+	 <a href="#"><i class="fab fa-instagram"></i></a>
+	</div>
+	
+	</div>
+	
+	<h1 class="creadit"> &copy; Copyright By <a href="#"> Mr.Satish Shende</a> @2024 </h1>
+	
+	</div>
+
+<!--footer section end-->
+
+
+
+  
+
+</body>
+</html>

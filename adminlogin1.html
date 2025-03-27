@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <style>
+	body {
+    font-family: Arial, sans-serif;
+	background-color:  #C8DBD7;
+}
+
+.login-container {
+    max-width: 300px;
+	background-color: #fff;
+    margin: 100px auto;
+    padding: 50px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.login-container h2{
+text-align: center;
+justify-content: center;
+margin-top: 10px;
+color: purple;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+	margin-right: 5px;
+}
+
+input[type="username"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: lightblue;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: pink;
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+}
+	</style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Admin Login</h2>
+        <form id="login-form">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="username" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" onclick="func()"><a href="adminconsole.html">Login</a> </button>
+        </form>
+        <p id="error-message" class="error-message"></p>
+    </div>
+<script>
+function func(){
+    document.getElementById("login-form").addEventListener("submit", function(event) {
+    event.preventDefault();
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+
+    // Check if username and password match admin credentials
+    if (username == "rgp2024" && password == "sataraforum") {
+        // Redirect to admin page
+        window.location.href = "adminlogin.html";
+    } else {
+        // Display error message
+        document.getElementById("error-message").textContent = "Invalid username or password. Please try again.";
+    }
+});
+
+}
+</script>
+</body>
+</html>
